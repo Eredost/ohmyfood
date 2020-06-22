@@ -1,0 +1,25 @@
+// Fonts
+// --------------------
+$default-font-size: 22px;
+$medium-font-size: 28px;
+$large-font-size: 45px;
+
+$font-family-fallback: 'Helvetica', sans-serif;
+
+// Colors
+// --------------------
+$black: #000;
+$green: #579C87;
+$yellow: #FDCB46;
+$white: #FFF;
+
+$color-brand: $yellow;
+$color-bg: $green;
+$color-text: $black;
+$color-text-alt: $white;
+
+// Breakpoints
+// --------------------
+$breakpoint-small: 576px;
+$breakpoint-medium: 780px;
+$breakpoint-large: 1100px;

@@ -2,7 +2,8 @@
 
 @import "~reset-css/sass/reset";
 
-@import "abstracts/variables";
+@import "abstracts/variables",
+  "abstracts/animations";
 
 @import "base/base",
   "base/typography";

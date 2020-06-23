@@ -14,7 +14,7 @@ $font-family-dp: 'Dancing Script';
       font-family: $font-family-dp, $font-family-fallback;
       background-image: $text-menu-bg-dp;
       color: transparent;
-      background-clip: text;
+      -webkit-background-clip: text;
     }
 
     p {
@@ -30,7 +30,7 @@ $font-family-dp: 'Dancing Script';
       font-weight: bold;
       background-image: $text-menu-bg-dp;
       color: transparent;
-      background-clip: text;
+      -webkit-background-clip: text;
     }
   }
 }

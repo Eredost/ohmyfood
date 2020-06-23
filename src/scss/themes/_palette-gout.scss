@@ -14,7 +14,7 @@ $font-family-pg: 'Kaushan Script';
       font-family: $font-family-pg, $font-family-fallback;
       background-image: $text-menu-bg-pg;
       color: transparent;
-      background-clip: text;
+      -webkit-background-clip: text;
     }
 
     p {
@@ -30,7 +30,7 @@ $font-family-pg: 'Kaushan Script';
       font-weight: bold;
       background-image: $text-menu-bg-pg;
       color: transparent;
-      background-clip: text;
+      -webkit-background-clip: text;
     }
   }
 }

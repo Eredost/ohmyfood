@@ -18,9 +18,41 @@
   }
 
   &__menu-title {
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     margin-top: 35px;
+
+    > h4 {
+
+      > span {
+        position: relative;
+      }
+
+      > span::after {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: $black;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: .3s transform ease-in-out;
+      }
+
+      &:hover > span::after {
+        transform: scaleX(1);
+      }
+
+      > span {
+        position: relative;
+
+        &:after {
+          content: '';
+        }
+      }
+    }
 
     > img {
       display: none;
@@ -28,7 +60,7 @@
   }
 
   &__menu-row {
-    font-size: $default-font-size;
+    font-size: 20px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -69,14 +101,16 @@
     &__menu-title {
       display: flex;
       align-items: center;
+      justify-content: space-around;
 
       > h4 {
         width: 40%;
       }
 
       > img {
-        display: block;
+        display: inline-block;
         flex: 1 1;
+        max-width: 30%;
 
         &:nth-of-type(2) {
           transform: scaleX(-1);
@@ -102,9 +136,11 @@
 
     &__menu-title {
       margin-top: 70px;
+      font-size: 30px;
     }
 
     &__menu-row {
+      font-size: $default-font-size;
       margin-top: 30px;
     }
 

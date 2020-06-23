@@ -2,6 +2,11 @@
 
 $menu-bg-cf: $light-pink;
 $text-color-cf: $orange;
+$section-colors: (
+  1: $orange,
+  2: $purple,
+  3: $deep-blue
+);
 $text-menu-bg-cf: linear-gradient(0.25turn, #C67412, #6E4CCC);
 $font-family-title-cf: 'Croissant One';
 $font-family-subtitle-cf: 'PT Serif';
@@ -23,6 +28,25 @@ $font-family-menu-cf: 'Crimson Text';
       color: $text-color-cf;
       font-family: $font-family-subtitle-cf, $font-family-fallback;
       font-weight: bold;
+    }
+  }
+
+  &.card {
+    background: $menu-bg-cf;
+    color: $text-color-ne;
+    font-family: $font-family-menu-cf, $font-family-fallback;
+
+    h3 {
+      font-weight: bold;
+      background-image: $text-menu-bg-cf;
+      color: transparent;
+      background-clip: text;
+    }
+
+    @each $index, $color in $section-colors {
+      .section--#{$index} {
+        color: $color;
+      }
     }
   }
 }

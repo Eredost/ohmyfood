@@ -1,24 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-$menu-bg-dc: $light-grey;
-$text-color-dc: $blue;
-$text-menu-bg-dc: linear-gradient(160deg, #2602df, #3896f8);
-$font-family-dc: 'Dancing Script';
+$menu-bg-dp: $light-grey;
+$text-color-dp: $blue;
+$text-menu-bg-dp: linear-gradient(160deg, #2602df, #3896f8);
+$font-family-dp: 'Dancing Script';
 
 .delice-papilles {
   &.menu {
-    background: $menu-bg-dc;
+    background: $menu-bg-dp;
 
     h2 {
       display: inline;
-      font-family: $font-family-dc, $font-family-fallback;
-      background-image: $text-menu-bg-dc;
+      font-family: $font-family-dp, $font-family-fallback;
+      background-image: $text-menu-bg-dp;
       color: transparent;
       background-clip: text;
     }
 
     p {
-      color: $text-color-dc;
+      color: $text-color-dp;
+    }
+  }
+
+  &.card {
+    background: $menu-bg-dp;
+
+    h3 {
+      font-family: $font-family-dp, $font-family-fallback;
+      font-weight: bold;
+      background-image: $text-menu-bg-dp;
+      color: transparent;
+      background-clip: text;
     }
   }
 }

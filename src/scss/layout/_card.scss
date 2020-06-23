@@ -1,0 +1,135 @@
+.card {
+  font-family: 'Kalam', $font-family-fallback;
+  padding: 35px 10px;
+  box-shadow: 0px 0px 15px rgba(85, 85, 85, 0.25);
+
+  &__header {
+
+    > img {
+      width: 50px;
+      display: block;
+      margin: 0 auto 5px;
+    }
+
+    > h3 {
+      text-align: center;
+      font-size: 35px;
+    }
+  }
+
+  &__menu-title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 35px;
+
+    > img {
+      display: none;
+    }
+  }
+
+  &__menu-row {
+    font-size: $default-font-size;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    > span {
+      align-self: flex-end;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    margin-top: 35px;
+
+    > span {
+      font-size: 28px;
+    }
+
+    > img {
+      width: 28px;
+      margin-right: 8px;
+    }
+  }
+
+  @media (min-width: $breakpoint-small) {
+    &__menu-row {
+      flex-direction: row;
+      justify-content: space-between;
+
+      > span {
+        align-self: flex-start;
+        text-align: right;
+        width: 20%;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    &__menu-title {
+      display: flex;
+      align-items: center;
+
+      > h4 {
+        width: 40%;
+      }
+
+      > img {
+        display: block;
+        flex: 1 1;
+
+        &:nth-of-type(2) {
+          transform: scaleX(-1);
+        }
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 70px 150px;
+
+    &__header {
+
+      > img {
+        width: 100px;
+      }
+
+      > h3 {
+        text-align: center;
+        font-size: 45px;
+      }
+    }
+
+    &__menu-title {
+      margin-top: 70px;
+    }
+
+    &__menu-row {
+      margin-top: 30px;
+    }
+
+    &__footer {
+      margin-top: 70px;
+
+      > span {
+        font-size: 45px;
+      }
+
+      > img {
+        width: 50px;
+      }
+    }
+  }
+}
+
+.card-title {
+  font-size: $medium-font-size;
+  font-weight: bold;
+  font-family: 'Montserrat', $font-family-fallback;
+  margin-bottom: 35px;
+  text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 38px;
+  }
+}

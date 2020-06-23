@@ -23,4 +23,20 @@ $font-family-ne: 'Devonshire';
       text-transform: uppercase;
     }
   }
+
+  &.card {
+    background: $menu-bg-ne;
+    color: $text-color-ne;
+
+    h3 {
+      font-family: $font-family-ne, $font-family-fallback;
+    }
+
+    & .card__footer {
+
+      > span {
+        font-family: $font-family-ne, $font-family-fallback;
+      }
+    }
+  }
 }

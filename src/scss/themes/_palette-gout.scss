@@ -21,4 +21,16 @@ $font-family-pg: 'Kaushan Script';
       color: $text-color-pg;
     }
   }
+
+  &.card {
+    background: $menu-bg-pg;
+
+    h3 {
+      font-family: $font-family-pg, $font-family-fallback;
+      font-weight: bold;
+      background-image: $text-menu-bg-pg;
+      color: transparent;
+      background-clip: text;
+    }
+  }
 }

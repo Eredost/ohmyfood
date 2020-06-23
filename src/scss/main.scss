@@ -6,3 +6,15 @@
 
 @import "base/base",
   "base/typography";
+
+@import "layout/header",
+  "layout/wrapper",
+  "layout/footer";
+
+@import "components/menu",
+  "components/soon";
+
+@import "themes/note-enchantee",
+  "themes/chic-francaise",
+  "themes/delice-papilles",
+  "themes/palette-gout";

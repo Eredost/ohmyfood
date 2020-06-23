@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+$menu-bg-pg: $darker-white;
+$text-color-pg: $light-green;
+$text-menu-bg-pg: linear-gradient(160deg, #3d943a, #bdff80);
+$font-family-pg: 'Kaushan Script';
+
+.palette-gout {
+  &.menu {
+    background: $menu-bg-pg;
+
+    h2 {
+      display: inline;
+      font-family: $font-family-pg, $font-family-fallback;
+      background-image: $text-menu-bg-pg;
+      color: transparent;
+      background-clip: text;
+    }
+
+    p {
+      color: $text-color-pg;
+    }
+  }
+}

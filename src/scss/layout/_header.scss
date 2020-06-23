@@ -1,0 +1,9 @@
+.header {
+  text-align: center;
+  background: $color-bg;
+  padding: 1.5em 0;
+
+  > a {
+    color: $color-brand;
+  }
+}

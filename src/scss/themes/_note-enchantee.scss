@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
+
+$menu-bg-ne: pink;
+$text-color-ne: $brown;
+$font-family-ne: 'Devonshire';
+
+.note-enchantee {
+
+  &.menu {
+    background: $menu-bg-ne;
+
+    h2,
+    p {
+      color: $text-color-ne;
+    }
+
+    h2 {
+      font-family: $font-family-ne, $font-family-fallback;
+    }
+
+    p {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}

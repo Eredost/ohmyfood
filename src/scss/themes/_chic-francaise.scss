@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Croissant+One&family=PT+Serif:wght@700&display=swap');
+
+$menu-bg-cf: $light-pink;
+$text-color-cf: $orange;
+$text-menu-bg-cf: linear-gradient(0.25turn, #C67412, #6E4CCC);
+$font-family-title-cf: 'Croissant One';
+$font-family-subtitle-cf: 'PT Serif';
+$font-family-menu-cf: 'Crimson Text';
+
+.chic-francaise {
+  &.menu {
+    background: $menu-bg-cf;
+
+    h2 {
+      display: inline;
+      font-family: $font-family-title-cf, $font-family-fallback;
+      background-image: $text-menu-bg-cf;
+      color: transparent;
+      background-clip: text;
+    }
+
+    p {
+      color: $text-color-cf;
+      font-family: $font-family-subtitle-cf, $font-family-fallback;
+      font-weight: bold;
+    }
+  }
+}

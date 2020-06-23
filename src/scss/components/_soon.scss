@@ -1,0 +1,28 @@
+.soon {
+  font-family: 'Montserrat', $font-family-fallback;
+  background: $color-bg;
+  color: $color-brand;
+  font-size: 25px;
+  margin: 35px auto 0;
+  text-align: center;
+  border-radius: 15px;
+  padding: 0.75em 0;
+  max-width: 420px;
+
+  &__icons {
+
+    > span {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 0 2px;
+      border-radius: 50%;
+      background: $color-brand;
+    }
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 30px;
+    margin: 0 auto;
+  }
+}

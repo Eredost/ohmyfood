@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+$menu-bg-dc: $light-grey;
+$text-color-dc: $blue;
+$text-menu-bg-dc: linear-gradient(160deg, #2602df, #3896f8);
+$font-family-dc: 'Dancing Script';
+
+.delice-papilles {
+  &.menu {
+    background: $menu-bg-dc;
+
+    h2 {
+      display: inline;
+      font-family: $font-family-dc, $font-family-fallback;
+      background-image: $text-menu-bg-dc;
+      color: transparent;
+      background-clip: text;
+    }
+
+    p {
+      color: $text-color-dc;
+    }
+  }
+}

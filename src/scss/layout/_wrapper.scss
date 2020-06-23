@@ -11,6 +11,11 @@
     justify-content: space-evenly;
   }
 
+  &--bg {
+    padding: 1px 10px 25px;
+    background: darken($light-grey, 10);
+  }
+
   @media (min-width: $breakpoint-medium) {
     &--flex {
       flex-direction: row;

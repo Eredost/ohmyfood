@@ -29,12 +29,8 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: 'src/assets/images',
-                    to: 'images'
+                    from: 'src/assets/'
                 },
-                {
-                    from: 'src/assets/index.html'
-                }
             ]
         }),
         new BrowserSyncPlugin({
